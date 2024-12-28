@@ -2,15 +2,8 @@ import telebot
 from config import keys, TOKEN
 from utils import ConvertionException, CryptoConverter
 
-TOKEN = '7399775640:AAHki5ffopdKmt79onhEGWwh7SdBDqFnFIM'
 
 bot = telebot.TeleBot(TOKEN)
-
-keys = {
-    'Доллар': 'USD',
-    'Эфириум': 'ETH',
-    'Биткоин': 'BTC',
-}
 
 
 @bot.message_handler(commands=['start', 'help'])
